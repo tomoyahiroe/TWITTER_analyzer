@@ -15,7 +15,7 @@ function styleJson(data) {
     };
     elements[0] = element
   }
-  return elements
+  return JSON.stringify(elements)
 }
 
 export { styleJson };

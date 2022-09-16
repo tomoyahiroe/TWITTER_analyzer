@@ -1,7 +1,7 @@
 import { Client } from "twitter-api-sdk";
 import process from "node:process";
 
-const userAccountId = "1443494067799670792"; // user account you wanna fetch its data
+const userAccountId = process.env.MY_TWITTER_ID; // user account you wanna fetch its data
 
 async function getTweets() {
   const client = new Client(process.env.TWITTER_BEARER_TOKEN);
