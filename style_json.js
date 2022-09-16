@@ -13,7 +13,6 @@ function styleJson(data) {
       reply_count: element.public_metrics.reply_count,
       quote_count: element.public_metrics.quote_count,
     };
-    elements[0] = element
   }
   return JSON.stringify(elements, null, 2)
 }
