@@ -1,7 +1,7 @@
 function styleJson(data) {
   const elements = [];
-  let loopLength = data.data.length
-  if(data.data.length >= 100) loopLength = 100
+  let loopLength = data.data.length;
+  if (data.data.length >= 100) loopLength = 100;
   for (let i = 0; i < data.data.length; i++) {
     const element = data.data[i];
     elements[i] = {
@@ -14,7 +14,8 @@ function styleJson(data) {
       quote_count: element.public_metrics.quote_count,
     };
   }
-  return JSON.stringify(elements, null, 2)
+  // return JSON.stringify(elements, null, 2)
+  return elements;
 }
 
 export { styleJson };
