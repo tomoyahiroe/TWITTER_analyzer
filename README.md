@@ -15,6 +15,10 @@ Hi! Thank you for your visiting this repository. This repository are being made 
 
 If you wanna get these information, this repository would defenitely help you.(100 tweets limitation)
 
+## Result sample
+
+![](./sample/result_image.png)
+
 ## My environment
 
 macOS Monterey 12.3.1
