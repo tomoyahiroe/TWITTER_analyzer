@@ -4,6 +4,7 @@ function jsonToCsv(styledObjectsArray) {
   let body = [];
   for (let i = 0; i < styledObjectsArray.length; i++) {
     const objectElement = styledObjectsArray[i];
+    objectElement.text = objectElement.text.split(",").join(" ");
     const objectElementValues = Object.values(objectElement);
     const element = objectElementValues.join(",").replace(/\n/g, "\\n");
     body.push(element);
