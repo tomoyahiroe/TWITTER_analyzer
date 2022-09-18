@@ -50,4 +50,4 @@ There are a lot of improvements. The biggest problem is limitation that we could
 
 ### 2022/09/18
 
-Now that you can make CSV file without using JSONtoCSV extension in VScode.
+Now that we don't have to use JSONtoCSV extension in VScode, all we have to do is just excecuting `node main.js > result.csv`.
