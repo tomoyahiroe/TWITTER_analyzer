@@ -13,7 +13,7 @@ Hi! Thank you for your visiting this repository. This repository are being made 
 5. how many times the tweet were replied
 6. how many times the tweet were quated
 
-If you wanna get these information, this repository would defenitely help you.
+If you wanna get these information, this repository would defenitely help you.(100 tweets limitation)
 
 ## My environment
 
