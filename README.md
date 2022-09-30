@@ -43,7 +43,7 @@ curl "https://api.twitter.com/2/users/by/username/{username}" -H "Authorization:
 
 1. Clone this repository and Install dependencies(ex. `yarn install `)
 2. Change userID(get_tweets.js line4) or make environmental variable(MY_TWITTER_ID=) in your PC
-3. Execute ` node main.js > result.csv`
+3. Execute `node main.js`
 4. That's it!! Now you get a CSV file named result.csv
 
 ## log
@@ -55,3 +55,7 @@ There are a lot of improvements. The biggest problem is limitation that we could
 ### 2022/09/18
 
 Now that we don't have to use JSONtoCSV extension in VScode, all we have to do is just excecuting `node main.js > result.csv`.
+
+### 2022/10/01
+
+To use this program more easily, I add write_file.js. Now, we just excecute `node main.js`.
