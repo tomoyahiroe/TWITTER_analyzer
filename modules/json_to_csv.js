@@ -1,9 +1,9 @@
-function jsonToCsv(styledObjectsArray) {
-  const header = Object.keys(styledObjectsArray[0]).join(",") + "\n";
+function jsonToCsv(styledObjects) {
+  const header = Object.keys(styledObjects[0]).join(",") + "\n";
 
   let body = [];
-  for (let i = 0; i < styledObjectsArray.length; i++) {
-    const objectElement = styledObjectsArray[i];
+  for (let i = 0; i < styledObjects.length; i++) {
+    const objectElement = styledObjects[i];
     objectElement.text = objectElement.text.split(",").join(" ");
     const objectElementValues = Object.values(objectElement);
     const element = objectElementValues.join(",").replace(/\n/g, "\\n");
