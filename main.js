@@ -5,8 +5,8 @@ import { writeFile } from "./modules/write_file.js";
 
 async function createCsvFile() {
   const tweets = await getTweets();
-  const styledJson = await createStyledJson(tweets);
-  const csv = await jsonToCsv(styledJson);
+  const styledJson = createStyledJson(tweets);
+  const csv = jsonToCsv(styledJson);
   await writeFile(csv);
 }
 
