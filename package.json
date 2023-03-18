@@ -6,7 +6,9 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^16.0.3",
-    "twitter-api-sdk": "^1.1.0"
+    "tsc": "^2.0.4",
+    "twitter-api-sdk": "^1.1.0",
+    "typescript": "^5.0.2"
   },
   "devDependencies": {
     "vitest": "^0.29.3"
