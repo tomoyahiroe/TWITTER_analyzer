@@ -1,4 +1,6 @@
-function createStyledJson(tweets) {
+import { Tweets } from "models";
+
+function createStyledJson(tweets: Tweets) {
   const styledJson = [];
   let length = tweets.data.length;
   if (length >= 100) length = 100;
@@ -14,7 +16,6 @@ function createStyledJson(tweets) {
       quote_count: tweetData.public_metrics.quote_count,
     };
   }
-  // return JSON.stringify(styledJson, null, 2)
   return styledJson;
 }
 
