@@ -8,9 +8,8 @@ async function getTweets() {
   const response = await client.tweets.usersIdTweets(userAccountId, {
     max_results: 100,
     "tweet.fields": ["created_at", "public_metrics"],
-  })
+  });
   return response;
 }
 
 export { getTweets };
-
