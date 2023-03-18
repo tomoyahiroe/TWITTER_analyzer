@@ -1,4 +1,6 @@
-function jsonToCsv(styledObjects) {
+import { StyledJson } from "models";
+
+function jsonToCsv(styledObjects: StyledJson) {
   const header = Object.keys(styledObjects[0]).join(",") + "\n";
 
   let body = [];
