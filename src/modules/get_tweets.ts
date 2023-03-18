@@ -1,5 +1,4 @@
 import { Client } from "twitter-api-sdk";
-import "dotenv/config.js";
 
 async function getTweets(userId: string, token: string, max_results: number) {
   const client = new Client(token);

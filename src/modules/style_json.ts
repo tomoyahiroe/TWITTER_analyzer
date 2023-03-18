@@ -1,6 +1,6 @@
-import { Tweets } from "models";
+import { Tweets, StyledJson } from "models";
 
-function createStyledJson(tweets: Tweets) {
+function createStyledJson(tweets: Tweets): StyledJson {
   const styledJson = [];
   let length = tweets.data.length;
   if (length >= 100) length = 100;

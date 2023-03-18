@@ -1,3 +1,5 @@
+import "dotenv/config.js";
+import { Tweet, Tweets } from "models/index.js";
 import { getTweets } from "./modules/get_tweets.js";
 import { createStyledJson } from "./modules/style_json.js";
 import { jsonToCsv } from "./modules/json_to_csv.js";
@@ -11,3 +13,5 @@ async function createCsvFile() {
 }
 
 createCsvFile();
+
+const userAccountId = process.env.MY_TWITTER_ID;
